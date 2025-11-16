@@ -1,12 +1,12 @@
 .container {
- display: flex;
- align-items: center;
- flex-direction: column;
- padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
-h1{
-  color: #fff;
+h1 {
+  color: #1E1E1E;
   font-size: 24px;
   text-align: center;
 }
@@ -16,55 +16,65 @@ form {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #2e2d4e;
+  border-radius: 12px;
+  background-color: #F8F5FF;
   max-width: 50%;
   width: 400px;
   margin-bottom: 20px;
+  border: 1px solid #b7a5f8;
 
   & button {
     border-radius: 30px;
-    background-color: #9b9aff;
-    height: 30px;
+    background-color: #7B5CFF;
+    height: 36px;
     border: none;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
+    transition: 0.2s ease;
   }
 
   & button:hover {
-    opacity: 0.85;
+    background-color: #6A4AF8;
+    transform: translateY(-1px);
   }
 
   & input {
-    border: 1px sold #48456c;
+    border: 1px solid #b7a5f8;
     border-radius: 30px;
-    height: 30px;
-    background-color: #363653;
-    color: #fff;
+    height: 36px;
+    background-color: #FFFFFF;
+    color: #1E1E1E;
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 12px;
     outline: none;
+    transition: 0.2s ease;
+  }
+
+  & input:focus {
+    border-color: #7B5CFF;
+    box-shadow: 0 0 0 2px rgba(123, 92, 255, 0.25);
   }
 }
 
 .card {
   display: flex;
   justify-content: space-between;
-  background-color: #2e2d4e;
+  background-color: #FFFFFF;
   margin: 10px;
-  padding: 10px;
+  padding: 12px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid #b7a5f8;
 
-  & p{
-    color: #8b8ae1;
+  & p {
+    color: #555;
     font-weight: 500;
 
     & span {
-      font-weight: 200;
-      color: #fff;
+      font-weight: 400;
+      color: #1E1E1E;
     }
   }
 
@@ -72,10 +82,12 @@ form {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
+    transition: 0.2s ease;
   }
 
   & button:hover {
-    opacity: 10;
+    opacity: 1;
+    transform: scale(1.15);
   }
 }
